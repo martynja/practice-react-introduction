@@ -9,17 +9,17 @@ const headerStyle = {
 }
 
 const MenuItem = props => {
-    const { url, title } = props
+    const { url, text } = props
 
     return (
-        <li style={headerStyle}><a href={url}>{title}</a></li>
+        <li style={headerStyle}><a href={url}>{text}</a></li>
     );
 };
 
-MenuItem.defaultProps = { url: "/", title: "Empty menu element" }
+MenuItem.defaultProps = { url: "/", text: "Empty menu element" }
 MenuItem.propTypes = {
     url: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
 }
 
 
